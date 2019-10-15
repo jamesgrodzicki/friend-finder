@@ -7,6 +7,14 @@
     <title>Survey</title>
 </head>
 <body>
-    <p>yo whaddup</p>
+    <form action='/api/friends' method='post'>
+        <p>Enter Your Full Name</p>
+        <input type='text' name='name' required><br><hr>
+        <p>Enter Your Age</p>
+        <input type='number' name='age' min='1' max='120' required><br><hr>
+        <p>Enter Your Phone Number</p>
+        <input type='tel' name='phoneNumber' required><br><hr>
+        <input type='submit' value='Submit'>
+    </form>
 </body>
 </html>

@@ -1,8 +1,8 @@
 const friendsArray = [
     {
         name: 'john',
-        age: 35,
-        phoneNumber: 333-333-3333,
+        age: '35',
+        phoneNumber: '333-333-3333',
         q1: 3,
         q2: 3,
         q3: 3,
