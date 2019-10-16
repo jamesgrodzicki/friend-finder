@@ -8,9 +8,9 @@ module.exports = function(app){
     });
 
     app.post('/api/friends', function(req, res){
-        compatibility(req.body.scores, friendsArray);
+        let bestMatch = compatibility(req.body.scores, friendsArray);
         friendsArray.push(req.body);
         console.log(req.body);
-        res.json(friendsArray);
+        res.send(`\nName: ${bestMatch[0].name}\nAge: ${bestMatch[0].age}\nPhone Number: ${bestMatch[0].phoneNumber}`);
     });
 };
