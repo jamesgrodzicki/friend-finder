@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script rel='stylesheet' src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
     <title>Survey</title>
 </head>
+
 <body>
     <form action='/api/friends' method='post'>
         <p>Enter Your Full Name</p>
-        <input type='text' name='name' required><br><hr>
+        <input type='text' name='name' required><br>
+        <hr>
         <p>Enter Your Age</p>
-        <input type='number' name='age' min='1' max='120' required><br><hr>
+        <input type='number' name='age' min='1' max='120' required><br>
+        <hr>
         <p>Enter Your Phone Number</p>
-        <input type='tel' name='phoneNumber' required><br><hr>
+        <input type='tel' name='phoneNumber' required><br>
+        <hr>
         <p>Rate Sriracha 1-5</p>
 
         <!-- Question #1 -->
@@ -24,7 +30,8 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-        </select><br><hr>
+        </select><br>
+        <hr>
 
         <!-- Question #2 -->
 
@@ -35,7 +42,8 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-        </select><br><hr>
+        </select><br>
+        <hr>
 
         <!-- Question #3 -->
 
@@ -46,7 +54,8 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-        </select><br><hr>
+        </select><br>
+        <hr>
 
         <!-- Question #4 -->
 
@@ -57,7 +66,8 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-        </select><br><hr>
+        </select><br>
+        <hr>
 
         <!-- Question #5 -->
 
@@ -68,11 +78,13 @@
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
-        </select><br><hr>
+        </select><br>
+        <hr>
 
         <!-- Submit Button -->
 
-        <input type='submit' value='Submit'>
+        <input type='submit' id='submit' value='Submit'>
     </form>
 </body>
+
 </html>

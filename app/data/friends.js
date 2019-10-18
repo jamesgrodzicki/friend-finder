@@ -13,12 +13,12 @@ const friendsArray = [
     }
 ];
 
-function compatibility(userArr, existingArr){
-    const userArrInt = userArr.map(Number);
+function compatibility(existingArr){
+    const userArrInt = existingArr[existingArr.length-1].scores.map(Number);
     let bestMatch = 21;
     let bestMatchArr = [];
     let arrayCheck;
-    for(let i=0;i<existingArr.length;i++){
+    for(let i=0;i<existingArr.length-1;i++){
         let totalDiff = 0;
         arrayCheck = existingArr[i].scores.map(Number);
         for(let j=0;j<arrayCheck.length;j++){
