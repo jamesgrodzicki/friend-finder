@@ -6,10 +6,6 @@ module.exports = function(app){
         res.json(friendsArray);
     });
 
-    // app.get('/', function(req, res){
-        //     res.send(`\nYour Best Friend: ${bestMatch[0].name}\nAge: ${bestMatch[0].age}\nPhone Number: ${bestMatch[0].phoneNumber}`);
-        // });
-        
     app.post('/api/friends', function(req, res){
         friendsArray.push(req.body);
         console.log(req.body);

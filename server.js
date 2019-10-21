@@ -5,7 +5,8 @@ const exphbs = require('express-handlebars');
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
-app.engine('handlebars', exphbs({defaultLayer: 'main'}));
+app.use(express.static("public"));
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 require('./app/routing/apiRoutes.js')(app);
